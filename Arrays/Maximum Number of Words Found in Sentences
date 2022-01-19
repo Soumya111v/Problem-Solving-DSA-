@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+   vector<string> sentences={"Please Wait","Continue to fight","Continue to win","Make your dreams come real"};
+    int max=0;
+     for(int i=0;i<sentences.size();i++)
+      {
+         int count=1;
+         for(int j=0;j<sentences[i].size();j++)
+          {
+            if(sentences[i][j]==' ')
+            count++;
+          }
+          if(count>max)
+          max=count;
+      }
+  cout<< max;
+  return 0;
+}
