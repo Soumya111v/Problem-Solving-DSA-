@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int> nums1 = {1,2};
+    vector<int> nums2 ={3,4};
+     vector<int>v3(nums1);
+        double count;
+      v3.insert(v3.end(),nums2.begin(),nums2.end());
+        sort(v3.begin(),v3.end());
+      for(int i=0;i<v3.size();i++){
+          int amt=v3.size();
+        if(amt%2==0){
+          count= ((v3[amt/2]+v3[(amt-1)/2])/2.0);  
+        }
+          else{
+             count= v3[amt/2];
+          }
+      }
+        cout<< count;
+    return 0;
+}
