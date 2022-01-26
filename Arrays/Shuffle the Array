@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int g,n;
+    cin>>g>>n;
+       vector<int>v1;
+       vector<int>v2;
+       for(int i=0;i<g;i++){
+         int nos;
+         cin>>nos;
+         v1.push_back(nos);
+       }
+       for(int i=0;i<n;i++){
+           v2.push_back(v1[i]);
+           v2.push_back(v1[i+n]);
+       }
+       for(auto it=v2.begin();it!=v2.end();it++){
+           cout<<*it;
+       }
+    return 0;
+}
